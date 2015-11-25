@@ -1,0 +1,16 @@
+ <table id="transaction-table" class="table table-condensed table-responsive">    
+  <thead>
+    <th>email </th>
+    <th>role </th>
+  </thead>
+  <tbody>
+    <% @users.each do |r| %>
+      <tr>
+        <td><%= r.email %></td>
+        <td><%= r.role %></td>
+         <td><%= link_to 'Destroy',User.destroy , method: :delete, data: { confirm: 'Are you sure?' 
+         } %></td>
+      </tr>
+   <% end %>
+  </tbody>  
+</table>
