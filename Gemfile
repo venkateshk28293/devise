@@ -24,6 +24,7 @@ gem 'devise'
 gem "cancan"
 gem 'twitter-bootstrap-rails'
 gem 'carrierwave'
+gem 'devise_ldap_authenticatable'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

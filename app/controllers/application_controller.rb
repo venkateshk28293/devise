@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  devise :ldap_authenticatable
   protect_from_forgery with: :exception
   before_filter :configure_devise_params, if: :devise_controller?
   def configure_devise_params
